@@ -50,7 +50,7 @@ dotfiles/
 ## Установка
 
 ```bash
-git clone https://github.com/ВАШ_НИК/dotfiles.git ~/dotfiles
+git clone https://github.com/RDKGL/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
