@@ -1,0 +1,7 @@
+# Автозапуск PipeWire при старте сессии
+pipewire &
+sleep 1
+wireplumber &
+pipewire-pulse &
+
+exec i3

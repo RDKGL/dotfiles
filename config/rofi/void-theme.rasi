@@ -1,0 +1,82 @@
+/* ==========================================
+ * Rofi Void Linux Emerald Theme
+ * ========================================== */
+
+* {
+    bg:          #111111;
+    bg-alt:      #1c1c1c;
+    bg-selected: #1f2937;
+    fg:          #e5e7eb;
+    fg-muted:    #6b7280;
+    accent:      #10b981;
+    border-col:  #10b981;
+
+    background-color: transparent;
+    text-color:       @fg;
+    font:             "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    background-color: @bg;
+    border:           2px;
+    border-color:     @border-col;
+    border-radius:    8px;
+    width:            500px;
+    padding:          16px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  12px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius:    6px;
+    padding:          10px 14px;
+    children:         [ prompt, entry ];
+    spacing:          10px;
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    placeholder:       "Поиск...";
+    placeholder-color: @fg-muted;
+    text-color:        @fg;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    fixed-height: true;
+    spacing:      4px;
+    cycle:        true;
+}
+
+element {
+    padding:       8px 12px;
+    border-radius: 6px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @bg-selected;
+    text-color:       @accent;
+}
+
+element-icon {
+    size: 24px;
+    margin: 0 10px 0 0;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: inherit;
+}
